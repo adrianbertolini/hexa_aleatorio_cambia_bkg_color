@@ -48,3 +48,11 @@ body {
   text-transform: uppercase;
   border-radius: 10px;
 }
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: 0.95;
+}
