@@ -1,37 +1,14 @@
-const HEXA = [
-  '0',
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-  '6',
-  '7',
-  '8',
-  '9',
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-];
-const BOTON = document.getElementById('btn');
-
 let colorInicio = '#85929E';
-
 document.body.style.background = colorInicio;
+const BOTON = document.getElementById('btn');
 
 let codigoColor = document.getElementById('codigoColor');
 
 codigoColor.innerText = colorInicio;
 
-BOTON.addEventListener('click', generarHexa);
-
-let posicionArray;
-let colorHexa;
-
-function generarHexa() {
+function generarColorHexa() {
+  const HEXA = '0123456789ABCDEF';
+  let posicionArray;
   codigoColor.innerText = '#';
   for (let i = 0; i < 6; i++) {
     posicionArray = Math.floor(Math.random() * HEXA.length);
@@ -40,3 +17,5 @@ function generarHexa() {
     document.body.style.background = colorInicio;
   }
 }
+
+BOTON.addEventListener('click', generarColorHexa);
