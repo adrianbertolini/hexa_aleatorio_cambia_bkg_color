@@ -37,7 +37,7 @@ body {
 }
 
 .btn {
-  background-color: #2e4053;
+  background-color: #3b5066;
   font-size: 1rem;
   border: none;
   padding: 1rem;
@@ -47,10 +47,12 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   border-radius: 10px;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn:hover {
   cursor: pointer;
+  background-color: #1d2936;
 }
 
 .btn:active {

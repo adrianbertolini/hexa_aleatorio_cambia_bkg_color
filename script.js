@@ -38,6 +38,5 @@ function generarHexa() {
     codigoColor.innerText = codigoColor.innerText.concat(HEXA[posicionArray]);
     colorInicio = codigoColor.innerText;
     document.body.style.background = colorInicio;
-    console.log(HEXA[posicionArray]);
   }
 }
