@@ -1,10 +1,8 @@
 let colorInicio = '#85929E';
 document.body.style.background = colorInicio;
-const BOTON = document.getElementById('btn');
-
 let codigoColor = document.getElementById('codigoColor');
-
 codigoColor.innerText = colorInicio;
+const BOTON = document.getElementById('btn');
 
 function generarColorHexa() {
   const HEXA = '0123456789ABCDEF';
